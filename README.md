@@ -6,9 +6,9 @@ A simple personal portfolio that runs free on GitHub Pages.
 
 Create a **public** repo named exactly:
 
-`<your-github-username>.github.io`
+`mijami.github.io`
 
-Example: `fahadsid1770.github.io`
+Example: `mijami.github.io`
 
 ## 2) Add files
 
@@ -22,7 +22,7 @@ Upload these files to the root of the repo:
 
 After pushing, your site is live at:
 
-`https://<your-github-username>.github.io/`
+`https://mijami.github.io/`
 
 ## 4) Customize
 
