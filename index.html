@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Muminul Islam - AI researcher and software engineer. Portfolio with research interests, projects, awards, and contact links."
+      content="Muminul Islam is an AI/ML researcher and software engineer working on multimodal AI, retrieval-augmented generation, efficient model adaptation, and backend development."
     />
-    <title>Muminul Islam | Portfolio</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muminul Islam | AI/ML Research & Software Engineering" />
+    <meta
+      property="og:description"
+      content="Research, software projects, technical skills, and achievements of Muminul Islam."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Muminul Islam | AI/ML Researcher & Software Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,220 +31,255 @@
     <header class="site-header">
       <div class="container nav-wrap">
         <a href="#home" class="brand">Muminul Islam</a>
-        <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
-        <nav id="nav" class="nav-links">
+        <button id="menuBtn" class="menu-btn" type="button" aria-label="Toggle navigation menu">☰</button>
+        <nav id="nav" class="nav-links" aria-label="Main navigation">
           <a href="#about">About</a>
-          <a href="#skills">Skills</a>
           <a href="#research">Research</a>
           <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
           <a href="#achievements">Achievements</a>
           <a href="#contact">Contact</a>
-          <a href="assets/Muminul_Islam_Resume.pdf" target="_blank" rel="noreferrer">CV</a>
+          <a href="assets/Muminul_Islam_Resume.pdf" target="_blank" rel="noopener noreferrer">CV</a>
         </nav>
       </div>
     </header>
 
     <main id="home" class="container page-layout">
-      <aside class="profile-card">
-        <img src="assets/muminul-islam.jpg" alt="Muminul Islam" class="profile-image" />
+      <aside class="profile-card" aria-label="Profile">
+        <img
+          src="assets/muminul-islam.jpg"
+          alt="Portrait of Muminul Islam"
+          class="profile-image"
+          decoding="async"
+        />
         <h1>Muminul Islam</h1>
-        <p class="profile-role">
-            AI Researcher & Software Engineer
-            </p>
-            <p class="profile-meta">
-            • Dhaka, Bangladesh
-            </p>
+        <p class="profile-role">AI/ML Researcher &amp; Software Engineer</p>
+        <p class="profile-meta">M.Sc. in CSE, BRAC University</p>
+        <p class="profile-meta">Dhaka, Bangladesh</p>
 
-        <div class="social-icons" aria-label="Social links">
-          <a href="mailto:m.islamjami@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          <a href="https://github.com/mijami" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/xami" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://codeforces.com/profile/b4tman" target="_blank" rel="noreferrer" aria-label="Codeforces"><i class="fas fa-code"></i></a>
+        <div class="social-icons" aria-label="Social profiles">
+          <a href="mailto:m.islamjami@gmail.com" aria-label="Email Muminul Islam"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          <a href="https://github.com/mijami" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://linkedin.com/in/xami" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+          <a href="https://codeforces.com/profile/b4tman" target="_blank" rel="noopener noreferrer" aria-label="Codeforces profile"><i class="fas fa-code" aria-hidden="true"></i></a>
         </div>
 
         <div class="profile-actions">
           <a class="btn btn-primary" href="mailto:m.islamjami@gmail.com">Contact Me</a>
-          <a class="btn btn-outline" href="assets/Muminul_Islam_Resume.pdf" target="_blank" rel="noreferrer">Download CV</a>
+          <a class="btn btn-outline" href="assets/Muminul_Islam_Resume.pdf" target="_blank" rel="noopener noreferrer">View CV</a>
         </div>
       </aside>
 
-      <section class="content-column">
-        <section id="about" class="section card-section">
-          <h2>About</h2>
+      <div class="content-column">
+        <section id="about" class="section card-section" aria-labelledby="about-title">
+          <h2 id="about-title">About Me</h2>
           <p>
-            Hi, I’m Muminul Islam, an AI researcher and software engineer focused on NLP, Knowledge Distillation and Model Compression. I enjoy building 
-            practical AI systems as well as scalable backend applications, with interests spanning research,
-             product development, and competitive programming.
+            I'm Muminul Islam, an AI researcher and software engineer pursuing an M.Sc. in
+            Computer Science and Engineering at BRAC University. My research experience includes
+            retrieval-augmented scientific visual question answering, parameter-efficient
+            fine-tuning, and low-resource machine translation. I'm particularly interested in
+            making AI models smaller, more accessible, and more reliable through techniques such
+            as knowledge distillation and efficient model adaptation.
+          </p>
+          <p>
+            Alongside research, I build backend applications and enjoy competitive programming.
           </p>
           <h3>Research Interests</h3>
-            <div class="chips">
-           
-            <span>NLP</span>
-            <span>Multimodal AI</span>
-            <span>Representation Learning</span>
+          <div class="chips" aria-label="Research interests">
+            <span>Efficient &amp; Small Language Models</span>
             <span>Knowledge Distillation</span>
-            <span>Efficient Fine-tuning</span>
-            <span>Agentic AI</span>
-            <span>Generalization</span>
-            </div>
-        </section>
-
-        <section id="research" class="section card-section">
-          <h2>Research</h2>
-          <ul class="timeline">
-            <li>
-                Co-authored research on retrieval-enhanced Scientific VQA using lightweight multimodal LLMs.
-                Implemented QLoRA-based fine-tuning and evaluated performance on benchmark datasets,
-                achieving strong results with reduced computational cost.
-                <br>
-                <a href="https://drive.google.com/file/d/1J3nwzdUCrOb24KGVxnaQ29ug1sDKF35W/view" target="_blank" rel="noreferrer">Manuscript</a>
-            </li>
-            <li>
-              Undergraduate Thesis: Low-Resource Machine Translation (regional dialect to standard dialect) using
-              Transformer-based methods.
-            </li>
-          </ul>
-        </section>
-
-        <section id="skills" class="section card-section">
-        <h3>AI / Machine Learning</h3>
-            <div class="chips">
-            <span>NLP</span>
-            <span>Information Retrieval</span>
-            <span>RAG</span>
             <span>Multimodal AI</span>
-            <span>Fine-tuning</span>
-            </div>
-
-        <h3>Backend & Systems</h3>
-            <div class="chips">
-            <span>.NET</span>
-            <span>REST APIs</span>
-            <span>PostgreSQL</span>
-            <span>System Design</span>
-            </div>
-
-        <h3>Programming Languages</h3>
-            <div class="chips">
-            <span>Python</span>
-            <span>C++</span>
-            <span>TypeScript</span>
-            <span>Java</span>
-            <span>PHP</span>
-            </div>
+            <span>Retrieval-Augmented Generation</span>
+            <span>Low-Resource NLP</span>
+            <span>Model Generalization</span>
+            <span>Trustworthy AI</span>
+          </div>
         </section>
 
-        <!-- <section id="news" class="section card-section">
-          <h2>News</h2>
+        <section id="research" class="section card-section" aria-labelledby="research-title">
+          <h2 id="research-title">Research</h2>
           <ul class="timeline">
-            <li><strong>2025:</strong> Academic research collaboration on scientific VQA and retrieval-enhanced pipelines.</li>
-            <li><strong>2024:</strong> Champion, UIU Intra-University AI Contest.</li>
-            <li><strong>2024:</strong> ICPC Asia Dhaka Regional participant (Onsite), Rank 135/309.</li>
+            <li>
+              <strong>RE-SciVQA — Retrieval-Enhanced Scientific Visual Question Answering</strong>
+              <p>
+                Co-authored research on context-aware retrieval for scientific figure question
+                answering. Contributed to query expansion, QLoRA-based multimodal model adaptation,
+                and evaluations involving ChartGemma and UniChart.
+              </p>
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1J3nwzdUCrOb24KGVxnaQ29ug1sDKF35W/view" target="_blank" rel="noopener noreferrer">Read manuscript</a>
+              </div>
+            </li>
+            <li>
+              <strong>Undergraduate Thesis — Bangla–Chittagonian Machine Translation</strong>
+              <p>
+                Contributed to a parallel dataset of more than 5,000 sentence pairs and
+                Transformer-based modeling for translation between Bangla and Chittagonian,
+                a low-resource language variety.
+              </p>
+            </li>
           </ul>
-        </section> -->
+        </section>
 
-        
-
-        <section id="projects" class="section card-section">
-          <h2>Projects</h2>
+        <section id="projects" class="section card-section" aria-labelledby="projects-title">
+          <h2 id="projects-title">Selected Projects</h2>
           <div class="projects-grid">
             <article class="project-card">
               <h3>E-Commerce Inventory API</h3>
-              <p>Built a secure .NET 8 REST API with JWT authentication, BCrypt password hashing,
-                and PostgreSQL integration. Implemented CRUD operations, pagination, and modular
-                architecture for scalability.</p>
-              <p class="project-meta"><span>C#</span></p>
+              <p>
+                Developed a .NET 8 REST API with JWT authentication, BCrypt password hashing,
+                PostgreSQL, product/category CRUD operations, pagination, and soft deletes.
+              </p>
+              <p class="project-meta"><span>C#</span> <span>ASP.NET Core</span> <span>PostgreSQL</span></p>
               <div class="project-links">
-                <a href="https://github.com/mijami/ecommerce-inventory-api" target="_blank" rel="noreferrer">Code</a>
+                <a href="https://github.com/mijami/ecommerce-inventory-api" target="_blank" rel="noopener noreferrer" aria-label="Source code for E-Commerce Inventory API">View source code</a>
               </div>
             </article>
 
             <article class="project-card">
               <h3>Codewar</h3>
-              <p>Developed a competitive programming platform with problem solving, submission tracking,
-                 and performance analytics to help users improve algorithmic skills.</p>
-              <p class="project-meta"><span>PHP</span></p>
+              <p>
+                Built a competitive programming platform for solving practice problems,
+                tracking submissions, and reviewing performance through analytics dashboards.
+              </p>
+              <p class="project-meta"><span>PHP</span> <span>MySQL</span></p>
               <div class="project-links">
-                <a href="https://github.com/mijami/codewar" target="_blank" rel="noreferrer">Code</a>
+                <a href="https://github.com/mijami/codewar" target="_blank" rel="noopener noreferrer" aria-label="Source code for Codewar">View source code</a>
               </div>
             </article>
-
-            <article class="project-card">
-              <h3>Pill Splitter for Fun</h3>
-              <p>Interactive React + TypeScript canvas UI with drag, collision-safe resize, and smooth pointer behavior.</p>
-              <p class="project-meta"><span>TypeScript</span></p>
-              <div class="project-links">
-                <a href="https://github.com/mijami/pill-splitter-for-fun" target="_blank" rel="noreferrer">Code</a>
-              </div>
-            </article>
-
 
             <article class="project-card">
               <h3>Cinephiles</h3>
-              <p>Built a movie discovery platform with search, filtering, and user interaction features,
-using PHP (Blade) for dynamic content rendering.</p>
-              <p class="project-meta"><span>Blade / PHP</span></p>
+              <p>
+                Developed a movie platform featuring personalized recommendations,
+                watch-party rooms, and community interactions.
+              </p>
+              <p class="project-meta"><span>PHP</span> <span>MySQL</span> <span>JavaScript</span></p>
               <div class="project-links">
-                <a href="https://github.com/mijami/cinephiles_" target="_blank" rel="noreferrer">Code</a>
+                <a href="https://github.com/mijami/cinephiles_" target="_blank" rel="noopener noreferrer" aria-label="Source code for Cinephiles">View source code</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <h3>Interactive Canvas UI</h3>
+              <p>
+                Created an interactive canvas experiment in React and TypeScript featuring
+                dragging, collision-aware resizing, and smooth pointer interactions.
+              </p>
+              <p class="project-meta"><span>React</span> <span>TypeScript</span></p>
+              <div class="project-links">
+                <a href="https://github.com/mijami/pill-splitter-for-fun" target="_blank" rel="noopener noreferrer" aria-label="Source code for Interactive Canvas UI">View source code</a>
               </div>
             </article>
 
             <article class="project-card">
               <h3>Course Management System</h3>
-              <p>Academic management application for handling course workflows and related data flows.</p>
-              <p class="project-meta"><span>PHP (with CSS/HTML)</span></p>
+              <p>
+                Built a course management application supporting academic workflows
+                and related information management.
+              </p>
+              <p class="project-meta"><span>PHP</span> <span>HTML/CSS</span></p>
               <div class="project-links">
-                <a href="https://github.com/mijami/Course-Management-System" target="_blank" rel="noreferrer">Code</a>
+                <a href="https://github.com/mijami/Course-Management-System" target="_blank" rel="noopener noreferrer" aria-label="Source code for Course Management System">View source code</a>
               </div>
             </article>
-
-            
           </div>
         </section>
 
-        <section id="achievements" class="section card-section">
-          <h2>Achievements & Activities</h2>
+        <section id="experience" class="section card-section" aria-labelledby="experience-title">
+          <h2 id="experience-title">Experience &amp; Education</h2>
+          <h3>Experience</h3>
           <ul class="timeline">
             <li>
-            <strong>Competitive Programming:</strong>
-            800+ problems solved, 150+ programming contests participated
+              <strong>Researcher (Part-Time)</strong> — Explainable LLM and Interpretable Technology Ensemble Research Lab
+              <p>September 2026 – Present · Remote</p>
             </li>
             <li>
-            <strong>ICPC:</strong>
-            Asia Dhaka Regional 2024 Rank 135/309, Honourable Mention (2021–2023)
+              <strong>Academic Research Collaborator</strong> — Supervised by Dr. Md Adnan Arefeen, North South University
+              <p>November 2025 – September 2026 · Scientific VQA, retrieval, and multimodal model evaluation</p>
             </li>
             <li>
-            <strong>Top Rankings:</strong>
-            Rank 7 (UAP 2024), Rank 50 (KUET IUPC 2025), Rank 52 (SUST 2024)
-            </li>
-            <li>
-            <strong>Awards:</strong>
-            Champion (UIU AI Contest), Merit Scholarship (2x), 3rd Runner-up Project Show
+              <strong>Trainee Software Engineer</strong> — Harris Digital (Harris Web Works)
+              <p>June 2025 – November 2025 · Software development and AI-assisted prototyping</p>
             </li>
           </ul>
-          <div class="project-links">
-            <a href="https://www.kaggle.com/competitions/uiu-intra-university-ai-contest-fall-2022/leaderboard" target="_blank" rel="noreferrer">AI Contest Leaderboard</a>
-            <a href="https://drive.google.com/file/d/14t_KClJCCohVJICuYDNtn6BveB4bhcFL/view?usp=sharing" target="_blank" rel="noreferrer">Scholarship Certificate</a>
-            <a href="https://drive.google.com/file/d/1Vp_gVhaYJPx7sTP753SbbgsGESmXqNiq/view?usp=sharing" target="_blank" rel="noreferrer">Project Show Certificate</a>
-            <a href="https://drive.google.com/drive/folders/1Fu0IqnCgcWxA9CNo6KKOz1Dkvij1niex" target="_blank" rel="noreferrer">IUPC Certificates</a>
-            <a href="https://drive.google.com/drive/folders/19BgR-S0QnDhtqxHJJn0GPoPZTD8w7Q4a?usp=sharing" target="_blank" rel="noreferrer">Contest Documents</a>
+          <h3>Education</h3>
+          <ul class="timeline">
+            <li>
+              <strong>M.Sc., Computer Science and Engineering</strong> — BRAC University
+              <p>2026 – Present</p>
+            </li>
+            <li>
+              <strong>B.Sc., Computer Science and Engineering</strong> — United International University
+              <p>2020 – 2025 · Thesis in low-resource machine translation</p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="skills" class="section card-section" aria-labelledby="skills-title">
+          <h2 id="skills-title">Technical Skills</h2>
+          <h3>AI / Machine Learning</h3>
+          <div class="chips">
+            <span>Python</span>
+            <span>PyTorch</span>
+            <span>Transformers</span>
+            <span>RAG</span>
+            <span>QLoRA</span>
+            <span>scikit-learn</span>
+          </div>
+          <h3>Backend &amp; Web</h3>
+          <div class="chips">
+            <span>ASP.NET Core</span>
+            <span>REST APIs</span>
+            <span>React</span>
+            <span>PHP</span>
+            <span>PostgreSQL</span>
+            <span>MySQL</span>
+          </div>
+          <h3>Programming &amp; Tools</h3>
+          <div class="chips">
+            <span>C</span>
+            <span>C++</span>
+            <span>C#</span>
+            <span>TypeScript</span>
+            <span>Git / GitHub</span>
+            <span>Linux / Bash</span>
           </div>
         </section>
 
-        <section id="contact" class="section card-section">
-          <h2>Contact</h2>
-          <p>For research collaboration, internships, or software development work:</p>
+        <section id="achievements" class="section card-section" aria-labelledby="achievements-title">
+          <h2 id="achievements-title">Achievements &amp; Activities</h2>
+          <ul class="timeline">
+            <li><strong>Competitive Programming:</strong> Solved 800+ problems and participated in 150+ contests.</li>
+            <li><strong>ICPC Asia Dhaka Regional 2024:</strong> Onsite rank 135/309; Honourable Mentions in 2021–2023.</li>
+            <li><strong>Inter-University Contests:</strong> Rank 7 at UAP 2024, rank 50 at KUET IUPC 2025, and rank 52 at SUST 2024.</li>
+            <li><strong>Awards:</strong> Champion, UIU Intra-University AI Contest (Fall 2022); two UIU Merit Scholarships; 3rd Runner-up, Project Show.</li>
+          </ul>
           <div class="project-links">
-            <a href="mailto:m.islamjami@gmail.com">m.islamjami@gmail.com</a>
-            <a href="https://linkedin.com/in/xami" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://www.kaggle.com/competitions/uiu-intra-university-ai-contest-fall-2022/leaderboard" target="_blank" rel="noopener noreferrer">AI contest leaderboard</a>
+            <a href="https://drive.google.com/file/d/14t_KClJCCohVJICuYDNtn6BveB4bhcFL/view?usp=sharing" target="_blank" rel="noopener noreferrer">Scholarship certificate</a>
+            <a href="https://drive.google.com/file/d/1Vp_gVhaYJPx7sTP753SbbgsGESmXqNiq/view?usp=sharing" target="_blank" rel="noopener noreferrer">Project show certificate</a>
+            <a href="https://drive.google.com/drive/folders/1Fu0IqnCgcWxA9CNo6KKOz1Dkvij1niex" target="_blank" rel="noopener noreferrer">IUPC certificates</a>
+            <a href="https://drive.google.com/drive/folders/19BgR-S0QnDhtqxHJJn0GPoPZTD8w7Q4a?usp=sharing" target="_blank" rel="noopener noreferrer">Contest documents</a>
           </div>
         </section>
-      </section>
+
+        <section id="contact" class="section card-section" aria-labelledby="contact-title">
+          <h2 id="contact-title">Contact</h2>
+          <p>Interested in AI/ML research collaboration or software engineering opportunities? Get in touch.</p>
+          <div class="project-links">
+            <a href="mailto:m.islamjami@gmail.com">m.islamjami@gmail.com</a>
+            <a href="https://linkedin.com/in/xami" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/mijami" target="_blank" rel="noopener noreferrer">GitHub</a>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <p>© <span id="year"></span> Muminul Islam. Last updated April 2026.</p>
+        <p>© <span id="year"></span> Muminul Islam. Updated October 2026.</p>
       </div>
     </footer>
 
