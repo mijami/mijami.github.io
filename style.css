@@ -248,7 +248,7 @@ h3 {
 p {
   margin: 0;
   color: var(--ink);
-  line-height: 1;
+  line-height: 1.25;
 }
 
 .card-section > p + p {
@@ -258,8 +258,8 @@ p {
 .chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 18px;
-  margin-top: 16px;
+  gap: 4px 9px;
+  margin-top: 10px;
 }
 
 .chips span {
