@@ -126,7 +126,7 @@ a:hover {
 
 .profile-card h1 {
   margin: 0 0 16px;
-  font-size: 43px;
+  font-size: 35px;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.04em;
@@ -237,8 +237,8 @@ a:hover {
 h2 {
   margin: 0 0 14px;
   color: var(--ink);
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 700;
   line-height: 1.4;
 }
 
