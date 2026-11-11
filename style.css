@@ -137,7 +137,7 @@ a:hover {
 .profile-meta {
   margin: 0;
   color: var(--muted);
-  font-size: 19px;
+  font-size: 14px;
 }
 
 .profile-role {
@@ -161,7 +161,7 @@ a:hover {
   width: fit-content;
   min-height: 34px;
   color: var(--muted);
-  font-size: 19px;
+  font-size: 9px;
   border: 0;
   border-radius: 0;
   background: transparent;
