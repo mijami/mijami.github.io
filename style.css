@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+
 :root {
   --ink: #20342f;
   --muted: #64736d;
   --accent: #326b58;
   --paper: #fcfcf9;
   --line: #dfe4dd;
-  --font: Arial, Helvetica, sans-serif;
+  --font: "Nunito", sans-serif;
 }
 
 * {
@@ -104,6 +106,7 @@ a:hover {
   top: 44px;
   align-self: start;
   padding-top: 26px;
+  text-align: center;
   background: transparent;
   border: 0;
   border-top: 2px solid var(--ink);
@@ -113,18 +116,17 @@ a:hover {
 
 .profile-image {
   width: 100%;
-  height: auto;
-  aspect-ratio: auto;
+  aspect-ratio: 1;
   object-fit: cover;
   object-position: center 29%;
-  margin-bottom: 14px;
+  margin: 0 auto 14px;
   border: 0;
-  border-radius: 0;
+  border-radius: 50%;
 }
 
 .profile-card h1 {
   margin: 0 0 16px;
-  font-size: 38px;
+  font-size: 43px;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.04em;
@@ -135,7 +137,7 @@ a:hover {
 .profile-meta {
   margin: 0;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 19px;
 }
 
 .profile-role {
@@ -145,6 +147,7 @@ a:hover {
 .social-icons {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2px;
   padding-top: 16px;
   margin: 0;
@@ -158,7 +161,7 @@ a:hover {
   width: fit-content;
   min-height: 34px;
   color: var(--muted);
-  font-size: 14px;
+  font-size: 19px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -186,6 +189,7 @@ a:hover {
 .profile-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 14px;
   margin-top: 18px;
 }
@@ -193,7 +197,7 @@ a:hover {
 .btn {
   padding: 0;
   color: var(--accent);
-  font-size: 14px;
+  font-size: 19px;
   font-weight: 400;
 }
 
@@ -374,7 +378,7 @@ p {
   }
 
   .profile-card h1 {
-    font-size: 34px;
+    font-size: 39px;
   }
 }
 
@@ -415,49 +419,38 @@ p {
 
   .profile-card {
     position: static;
-    display: grid;
-    grid-template-columns: 1fr 77px;
-    column-gap: 20px;
+    display: block;
     padding: 20px 0 24px;
     border-top: 1px solid var(--line);
   }
 
   .profile-image {
-    grid-column: 2;
-    grid-row: 1;
-    width: 77px;
-    height: 95px;
-    margin: 0;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 14px;
   }
 
   .profile-card h1 {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
-    margin: 0;
+    margin: 0 0 16px;
     font-size: clamp(30px, 10vw, 40px);
+    white-space: normal;
   }
 
   .profile-role,
-  .profile-meta {
-    grid-column: 1 / -1;
+  .profile-meta,
+  .social-icons,
+  .profile-actions {
+    width: 100%;
   }
 
   .profile-role {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .social-icons {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2px 15px;
+    display: flex;
     padding-top: 20px;
     border-top: 0;
-  }
-
-  .profile-actions {
-    grid-column: 1 / -1;
   }
 
   .card-section {
