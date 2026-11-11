@@ -22,7 +22,7 @@ body {
   background: var(--paper);
   font-family: var(--font);
   font-size: 16px;
-  line-height: 1.65;
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -96,7 +96,7 @@ a:hover {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 200px minmax(0, 1fr);
-  gap: 72px;
+  gap: 56px;
 }
 
 .profile-card {
@@ -123,7 +123,7 @@ a:hover {
 }
 
 .profile-card h1 {
-  margin: 0 0 22px;
+  margin: 0 0 16px;
   font-size: 38px;
   font-weight: 500;
   line-height: 1.1;
@@ -145,8 +145,8 @@ a:hover {
 .social-icons {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  padding-top: 20px;
+  gap: 2px;
+  padding-top: 16px;
   margin: 0;
   border-top: 1px solid var(--line);
 }
@@ -218,7 +218,7 @@ a:hover {
 }
 
 .card-section {
-  padding: 26px 0 40px;
+  padding: 22px 0 30px;
   background: transparent;
   border: 0;
   border-top: 2px solid var(--ink);
@@ -231,7 +231,7 @@ a:hover {
 }
 
 h2 {
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   color: var(--ink);
   font-size: 20px;
   font-weight: 600;
@@ -239,7 +239,7 @@ h2 {
 }
 
 h3 {
-  margin: 22px 0 10px;
+  margin: 18px 0 8px;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -252,29 +252,24 @@ p {
 }
 
 .card-section > p + p {
-  margin-top: 0.10rem;
+  margin-top: 0.55rem;
 }
 
 .chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 9px;
-  margin-top: 10px;
+  gap: 7px;
+  margin-top: 8px;
 }
 
 .chips span {
-  padding: 0;
+  padding: 5px 10px;
   color: var(--accent);
   font-size: 14px;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-}
-
-.chips span + span::before {
-  content: "·";
-  margin-right: 18px;
-  color: var(--line);
+  line-height: 1.25;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #f3f6f1;
 }
 
 .timeline {
@@ -284,8 +279,8 @@ p {
 }
 
 .timeline li {
-  padding: 0 0 24px;
-  margin: 0 0 24px;
+  padding: 0 0 18px;
+  margin: 0 0 18px;
   border-bottom: 1px solid var(--line);
   line-height: 1.7;
 }
@@ -307,7 +302,7 @@ p {
 }
 
 .project-card {
-  padding: 24px 28px 24px 0;
+  padding: 18px 24px 18px 0;
   background: transparent;
   border: 0;
   border-bottom: 1px solid var(--line);
@@ -316,7 +311,7 @@ p {
 }
 
 .project-card:nth-child(even) {
-  padding-left: 28px;
+  padding-left: 24px;
   border-left: 1px solid var(--line);
 }
 
@@ -330,7 +325,7 @@ p {
 }
 
 .project-meta {
-  margin-top: 12px;
+  margin-top: 8px;
   color: var(--muted);
   font-size: 14px;
 }
@@ -344,7 +339,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 5px 14px;
-  margin-top: 10px;
+  margin-top: 8px;
   font-size: 14px;
 }
 
@@ -375,7 +370,7 @@ p {
 
   .page-layout {
     grid-template-columns: 150px minmax(0, 1fr);
-    gap: 36px;
+    gap: 30px;
   }
 
   .profile-card h1 {
@@ -466,7 +461,7 @@ p {
   }
 
   .card-section {
-    padding: 24px 0 32px;
+    padding: 20px 0 28px;
   }
 
   .card-section:first-child {
