@@ -124,7 +124,7 @@ a:hover {
 
 .profile-card h1 {
   margin: 0 0 22px;
-  font-size: 45px;
+  font-size: 38px;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.04em;
@@ -248,11 +248,11 @@ h3 {
 p {
   margin: 0;
   color: var(--ink);
-  line-height: 1.75;
+  line-height: 1.6;
 }
 
 .card-section > p + p {
-  margin-top: 1rem;
+  margin-top: 0.65rem;
 }
 
 .chips {
