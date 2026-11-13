@@ -231,7 +231,7 @@ a:hover {
 }
 
 .card-section {
-  padding: 22px 0 30px;
+  padding: 8px 0 8px;
   background: transparent;
   border: 0;
   border-top: 2px solid var(--ink);
